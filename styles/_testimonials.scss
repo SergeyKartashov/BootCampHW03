@@ -1,0 +1,113 @@
+.testimonials-cards {
+    display: flex;
+    justify-content: center;
+
+    @include xl-max {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    .cards {
+        gap: 60px;
+
+        .list_1 {
+            gap: 60px;
+
+            @include xl-min {
+                display: flex;
+            }
+
+        }
+
+        .list_2 {
+            gap: 60px;
+
+            @include xl-max {
+                padding-bottom: 30px;
+            }
+
+            @include xl-min {
+                display: flex;
+            }
+        }
+
+    }
+
+    .card {
+        padding-bottom: 60px;
+
+        @include xl-max {
+            padding-bottom: 20px;
+        }
+
+        .client {
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            border: 1px solid #DEDEDE;
+            width: 100%;
+            height: 100%;
+            padding-right: 40px;
+            padding-bottom: 40px;
+
+            @include xl-min {
+                max-width: 430px;
+                max-height: 305px;
+            }
+
+            @include xl-max {
+                max-width: 350px;
+                max-height: 380px;
+            }
+
+            .client_header {
+                display: flex;
+            }
+
+            &__avatar {
+                display: flex;
+                width: 100%;
+                max-width: 50px;
+                height: 50px;
+                flex-shrink: 0;
+                border-radius: 50px;
+                padding: 40px;
+            }
+
+            &__title {
+                text-align: left;
+                padding-top: 40px;
+                padding-left: 0;
+            }
+
+            &__subtitle {
+                display: flex;
+                text-align: left;
+            }
+
+            &__link {
+                display: flex;
+                font-family: Work Sans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+            }
+
+            .paragraphe {
+                display: flex;
+                width: 100%;
+                max-width: 430px;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                text-align: left;
+                padding-left: 40px;
+            }
+        }
+    }
+}

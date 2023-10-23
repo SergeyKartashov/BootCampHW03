@@ -1,0 +1,182 @@
+.gallery-section {
+
+
+    &__text {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+        @include lg-max {
+            margin-bottom: 28px;
+
+            br {
+                display: none;
+            }
+        }
+
+    }
+
+    .radius {
+        display: flex;
+        border-radius: 12px;
+        box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid {
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+            ". . . . . . . . . . . . ."
+            ". item1 . item2 item2 item2 . item3 item3 item3 . item4 ."
+            ". . . . . . . . . . . . ."
+            "item5 item5 item5 item5 . item6 item6 item6 . item7 item7 item7 item7"
+            ". . . . . . . . . . . . .";
+        grid-template-columns: 35px 210px 70px 70px 70px 70px 70px 70px 70px 70px 70px 210px 35px;
+        grid-template-rows: 30px 285px 70px 285px 30px;
+
+        @include xl-max {
+            display: grid;
+            justify-content: center;
+            grid-template-areas:
+                ". . ."
+                ". item_mob_1 ."
+                ". item_mob_2 ."
+                ". item_mob_3 ."
+                ". item_mob_4 .";
+            grid-template-columns: 48px 330px 48px;
+            grid-template-rows: 30px 285px 285px 285px 285px;
+            gap: 20px;
+        }
+    }
+
+    .item_1 {
+        grid-area: item1;
+
+        @include xl-max {
+            display: none;
+        }
+    }
+
+    .item_2 {
+        grid-area: item2;
+
+        @include xl-max {
+            display: none;
+        }
+    }
+
+    .item_3 {
+        grid-area: item3;
+
+        @include xl-max {
+            display: none;
+        }
+    }
+
+    .item_4 {
+        grid-area: item4;
+
+        @include xl-max {
+            display: none;
+        }
+    }
+
+    .item_5 {
+        grid-area: item5;
+
+        @include xl-max {
+            display: none;
+        }
+    }
+
+    .item_6 {
+        grid-area: item6;
+
+        @include xl-max {
+            display: none;
+        }
+    }
+
+    .item_7 {
+        grid-area: item7;
+
+        @include xl-max {
+            display: none;
+        }
+    }
+
+    .item_mob_1 {
+        grid-area: item_mob_1;
+
+        @include xl-max {
+            display: flex;
+            width: 100%;
+            max-width: 329px;
+            height: 285px;
+        }
+
+        @include xl-min {
+            display: none;
+        }
+    }
+
+    .item_mob_2 {
+        grid-area: item_mob_2;
+
+        @include xl-max {
+            display: flex;
+            width: 100%;
+            max-width: 323px;
+            height: 285px;
+        }
+
+        @include xl-min {
+            display: none;
+        }
+    }
+
+    .item_mob_3 {
+        grid-area: item_mob_3;
+
+        @include xl-max {
+            display: flex;
+            width: 100%;
+            max-width: 317px;
+            height: 285px;
+        }
+
+        @include xl-min {
+            display: none;
+        }
+    }
+
+    .item_mob_4 {
+        grid-area: item_mob_4;
+
+        @include xl-max {
+            display: flex;
+            width: 100%;
+            max-width: 305px;
+            height: 285px;
+        }
+
+        @include xl-min {
+            display: none;
+        }
+    }
+
+}
+
+.gallery-button {
+    display: flex;
+    height: 52px;
+    padding: 10px 30px;
+    align-items: center;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
