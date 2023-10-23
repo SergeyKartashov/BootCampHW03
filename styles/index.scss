@@ -16,6 +16,10 @@
   --bg-color: #181818;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* base styles */
 body {
   margin: 0;
