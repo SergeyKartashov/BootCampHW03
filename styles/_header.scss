@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 34px;
+  margin-bottom: 120px;
+
+  background-color: var(--bg-color);
+
+  @include xl-max {
+    display: block;
+    padding-left: 34px;
+    padding-right: 16px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    @include xl-max {
+      justify-content: space-between;
+    }
+  }
+
+  .logo {
+    margin-right: 136px;
+
+    @include xl-max {
+      margin-right: 0;
+    }
+  }
+
+  &__nav {
+    margin-right: 174px;
+
+    @include xl-max {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    padding: 10px;
+  }
+
+  &__login-button {
+    @include xl-max {
+      display: none;
+    }
+  }
+
+  &__burger-icon,
+  &__close-icon {
+    display: none;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  &__mobile-button {
+    display: none;
+    margin-left: 15px;
+    background-color: inherit;
+
+    @include xl-max {
+      display: block;
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 120px;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    z-index: 1;
+
+    background-color: white;
+
+    &.visible {
+      display: block;
+    }
+
+    &__list {
+      margin-bottom: 60px;
+    }
+
+    &__link {
+      display: block;
+      color: black;
+      border-bottom: 1px solid black;
+      padding: 10px 0;
+    }
+
+    &__login-button {
+      display: block;
+      margin: 0 auto;
+      color: black;
+      border-color: black;
+    }
+  }
+}
